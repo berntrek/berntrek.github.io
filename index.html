@@ -5,27 +5,36 @@
   <link rel="stylesheet" type="text/css" href="mystyle.css"
 </head>
 
-<body>
+<body onload="focus()">
   <div>
     <h1 id="title">Bernard Bachoura<h1>
   </div>
 
   <center><div id="searchDiv">
-    <form action="https://google.com/search" method="get">
-      <input type="text" name="q" id="search">
+    <form action="https://google.com/search" method="get" target="_blank">
+      <input type="text" name="q" id="search" onFocus="clearForm()">
     </form>
   </div></center>
 
   <div id="links" class="center">
-    <a href='https://www.sophiafiori.com' class='button'>Sophia Fiori</a>
-    <a href='http://design.sophiafiori.com/sitemap/' class='button'>Sophia Fiori Sitemap</a>
-    <a href='https://www.venetianjewelers.com' class='button'>Ventian Jewelers</a>
+    <a target="_blank" href='https://www.sophiafiori.com' class='button'>Sophia Fiori</a>
+    <a target="_blank" href='http://design.sophiafiori.com/sitemap/' class='button'>Sophia Fiori Sitemap</a>
+    <a target="_blank" href='https://www.venetianjewelers.com' class='button'>Ventian Jewelers</a>
+    <a target="_blank" href='http://www.elbasoft.com/manufacturing/main_login.asp' class='button'>MFG</a>
   </div>
   <div id="links" class="center">
-    <a href='http://athoe.org/index.aspx' class='button'>Athoe</a>
-    <a href='http://www.ocnsandimas.com/sandbox/' class='button'>OCN San Dimas</a>
-    <a href='http://www.ocnusa.com/' class='button'>OCN USA</a>
-    <a href='https://www.venetianjewelersonline.com' class='button'>Venetian Jewelers Online</a>
+    <a target="_blank" href='http://athoe.org/index.aspx' class='button'>Athoe</a>
+    <a target="_blank" href='http://www.ocnsandimas.com/sandbox/' class='button'>OCN San Dimas</a>
+    <a target="_blank" href='http://www.ocnusa.com/' class='button'>OCN USA</a>
+    <a target="_blank" href='http://staging.elbasoft.com/Login.aspx?gotoscreen=/default.aspx' class='button'>Staging MFG</a>
   </div>
 </body>
+<script>
+  function clearForm() {
+    document.getElementById("search").value = "";
+  }
+  function focus() {
+    document.getElementById("search").focus();
+  }
+</script>
 </html>

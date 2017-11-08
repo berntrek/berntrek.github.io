@@ -1,40 +1,35 @@
 <html>
-<head>
-  <title>Hello Bernard</title>
-  <link rel="shortcut icon" href="tabicon.ico" type="image/ico">
-  <link rel="stylesheet" type="text/css" href="mystyle.css"
-</head>
+  <head>
+    <title>Bernard Bachoura</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="shortcut icon" href="tabicon.ico" type="image/ico">
+    <!-- <link rel="stylesheet" type="text/css" href="buttonstyle.css"> -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
 
-<body onload="focus()">
-  <div>
-    <h1 id="title">Bernard Bachoura<h1>
-  </div>
+  </head>
 
-  <center><div id="searchDiv">
-    <form action="https://google.com/search" method="get" target="_blank">
-      <input type="text" name="q" id="search" onFocus="clearForm()">
-    </form>
-  </div></center>
+  <body>
+    <div class="row">
+      <div class="col-12">
+        <h1 id="title">Bernard Bachoura</h1>
+      </div>
+    </div>
+    <div class="row searchDiv">
+      <div class="col-12 center">
+          <form action="https://google.com/search" method="get">
+            <input type="text" name="q" id="search">
+          </form>
+      </div>
+    </div>
+    <div id="button-container" class="container center"></div>
 
-  <div id="links" class="center">
-    <a target="_blank" href='https://www.sophiafiori.com' class='button'>Sophia Fiori</a>
-    <a target="_blank" href='http://design.sophiafiori.com/sitemap/' class='button'>Sophia Fiori Sitemap</a>
-    <a target="_blank" href='https://www.venetianjewelers.com' class='button'>Ventian Jewelers</a>
-    <a target="_blank" href='http://www.elbasoft.com/manufacturing/main_login.asp' class='button'>MFG</a>
-  </div>
-  <div id="links" class="center">
-    <a target="_blank" href='http://athoe.org/index.aspx' class='button'>Athoe</a>
-    <a target="_blank" href='http://www.ocnsandimas.com/sandbox/' class='button'>OCN San Dimas</a>
-    <a target="_blank" href='http://www.ocnusa.com/' class='button'>OCN USA</a>
-    <a target="_blank" href='http://staging.elbasoft.com/Login.aspx?gotoscreen=/default.aspx' class='button'>Staging MFG</a>
-  </div>
-</body>
-<script>
-  function clearForm() {
-    document.getElementById("search").value = "";
-  }
-  function focus() {
-    document.getElementById("search").focus();
-  }
-</script>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- personal script -->
+    <script src="script.js"></script>
+    <script>window.PersonalHomepage.init()</script>
+  </body>
 </html>
